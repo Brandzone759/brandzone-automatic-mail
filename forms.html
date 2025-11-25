@@ -2,77 +2,125 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>Material gratuit – BrandZone</title>
+  <title>BrandZone – Material Gratuit</title>
 </head>
-<body style="margin:0; padding:0; background-color:#0b0b0b;">
-  <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="background-color:#0b0b0b; margin:0; padding:24px 0;">
+
+<body style="margin:0; padding:0; background:#0a0a0a; font-family:Arial, Helvetica, sans-serif;">
+
+  <!-- BACKGROUND ANIMATION -->
+  <div style="
+    position:fixed;
+    top:0; left:0;
+    width:100%; height:100%;
+    overflow:hidden;
+    z-index:-1;
+    background:#0a0a0a;
+  ">
+    <div style="
+      width:200%;
+      height:200%;
+      background: repeating-linear-gradient(
+        120deg,
+        rgba(255,42,79,0.05) 0px,
+        rgba(255,42,79,0.05) 2px,
+        rgba(0,0,0,0) 2px,
+        rgba(0,0,0,0) 14px
+      );
+      animation: moveLines 18s linear infinite;
+    "></div>
+  </div>
+
+  <style>
+    @keyframes moveLines {
+      from { transform: translateX(0) translateY(0); }
+      to { transform: translateX(-200px) translateY(-200px); }
+    }
+  </style>
+
+  <!-- EMAIL WRAPPER -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="padding:32px 0;">
     <tr>
       <td align="center">
-        <!-- CONTAINER -->
-        <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:600px; background:linear-gradient(135deg,#111111,#050505); border-radius:16px; border:1px solid #2a2a2a;">
+
+        <!-- EMAIL CARD -->
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" 
+               style="max-width:600px; background:rgba(20,20,20,0.8); border:1px solid #2e2e2e; border-radius:18px; backdrop-filter:blur(10px); padding:32px;">
+
+          <!-- LOGO -->
           <tr>
-            <td style="padding:24px 28px 8px 28px; font-family:Arial, Helvetica, sans-serif; color:#ffffff;">
-              <!-- LOGO TEXT -->
-              <div style="font-size:18px; font-weight:bold; letter-spacing:0.08em; text-transform:uppercase; margin-bottom:8px;">
-                <span style="color:#ffffff;">Brand</span><span style="color:#ff2a4f;">Zone</span>
+            <td align="left" style="padding-bottom:12px;">
+              <div style="display:flex; align-items:center; gap:6px;">
+                <svg width="150" height="34" viewBox="0 0 300 70" xmlns="http://www.w3.org/2000/svg">
+                  <text x="0" y="50" font-size="48" font-family="Arial Black" fill="white">Brand</text>
+                  <text x="150" y="50" font-size="48" font-family="Arial Black" fill="#ff2a4f">Zone</text>
+                </svg>
               </div>
-              <div style="height:2px; width:56px; background:linear-gradient(90deg,#ff2a4f,#ff9040); margin-bottom:20px;"></div>
+              <div style="height:3px; width:60px; background:linear-gradient(90deg,#ff2a4f,#ff9040); margin-top:4px;"></div>
+            </td>
+          </tr>
 
-              <!-- MAIN TITLE -->
-              <h1 style="margin:0 0 16px 0; font-size:22px; line-height:1.3; color:#ffffff;">
-                Salut! 👋
-              </h1>
+          <!-- TITLE -->
+          <tr>
+            <td style="color:#ffffff; font-size:22px; font-weight:bold; padding-bottom:12px;">
+              Salut! 👋
+            </td>
+          </tr>
 
-              <!-- TEXT -->
-              <p style="margin:0 0 12px 0; font-size:15px; line-height:1.6; color:#e5e5e5;">
-                Îți mulțumim că ai completat formularul. Așa cum ți-am promis, îți trimitem materialul gratuit.
-              </p>
+          <!-- TEXT -->
+          <tr>
+            <td style="color:#dcdcdc; font-size:15px; line-height:1.6; padding-bottom:12px;">
+              Îți mulțumim că ai completat formularul. Așa cum ți-am promis, îți trimitem materialul gratuit.
+            </td>
+          </tr>
 
-              <p style="margin:0 0 12px 0; font-size:15px; line-height:1.6; color:#e5e5e5;">
-                📄 <strong>Găsești PDF-ul atașat în acest e-mail.</strong>
-              </p>
+          <tr>
+            <td style="color:#ffffff; font-size:15px; line-height:1.6; padding-bottom:14px;">
+              📄 <strong>Găsești PDF-ul atașat în acest e-mail.</strong>
+            </td>
+          </tr>
 
-              <p style="margin:0 0 16px 0; font-size:15px; line-height:1.6; color:#e5e5e5;">
-                Sperăm să îți fie util.
-              </p>
+          <tr>
+            <td style="color:#dcdcdc; font-size:15px; line-height:1.6; padding-bottom:18px;">
+              Sperăm să îți fie util.
+            </td>
+          </tr>
 
-              <!-- CTA BOX -->
-              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:16px 0 20px 0; background-color:#141414; border-radius:12px; border:1px solid #303030;">
+          <!-- CTA BOX -->
+          <tr>
+            <td>
+              <table width="100%" style="background:#161616; border:1px solid #2f2f2f; border-radius:14px; padding:18px; margin-bottom:20px;">
                 <tr>
-                  <td style="padding:16px 18px; font-family:Arial, Helvetica, sans-serif;">
-                    <p style="margin:0 0 8px 0; font-size:14px; line-height:1.5; color:#f5f5f5;">
-                      Dacă preferi să nu te ocupi tu de producția acestor materiale și vrei ca echipa noastră să le realizeze pentru tine, ne poți contacta oricând la:
-                    </p>
-                    <p style="margin:0; font-size:14px; line-height:1.5;">
-                      👉 <a href="mailto:sales@brandzone.ro" style="color:#ff2a4f; text-decoration:none; font-weight:bold;">sales@brandzone.ro</a>
-                    </p>
+                  <td style="color:#e8e8e8; font-size:14px; line-height:1.6;">
+                    Dacă preferi să nu te ocupi tu de producția acestor materiale și vrei ca echipa noastră să le realizeze pentru tine, ne poți contacta oricând:
+                    <br><br>
+                    👉 <a href="mailto:sales@brandzone.ro" style="color:#ff2a4f; font-weight:bold; text-decoration:none;">sales@brandzone.ro</a>
                   </td>
                 </tr>
               </table>
+            </td>
+          </tr>
 
-              <!-- SIGNATURE -->
-              <p style="margin:0 0 4px 0; font-size:14px; line-height:1.6; color:#cccccc;">
-                Cu respect,
-              </p>
-              <p style="margin:0 0 16px 0; font-size:14px; line-height:1.6; color:#ffffff; font-weight:bold;">
-                Echipa BrandZone
-              </p>
+          <!-- SIGNATURE -->
+          <tr>
+            <td style="color:#cfcfcf; font-size:14px; line-height:1.6;">
+              Cu respect,
+              <br>
+              <span style="font-weight:bold; color:#fff;">Echipa BrandZone</span>
             </td>
           </tr>
 
           <!-- FOOTER -->
           <tr>
-            <td style="padding:0 28px 22px 28px; font-family:Arial, Helvetica, sans-serif;" align="left">
-              <p style="margin:0; font-size:12px; line-height:1.6; color:#777777;">
-                <a href="https://brandzone.ro" style="color:#bbbbbb; text-decoration:none; font-weight:bold;">brandzone.ro</a>
-              </p>
+            <td style="padding-top:18px;">
+              <a href="https://brandzone.ro" style="color:#b4b4b4; font-size:12px; text-decoration:none;">brandzone.ro</a>
             </td>
           </tr>
 
         </table>
-        <!-- /CONTAINER -->
+
       </td>
     </tr>
   </table>
+
 </body>
 </html>
